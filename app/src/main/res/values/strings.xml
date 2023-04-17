@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="accouthint">请输入账号</string>
+    <string name="passhint">请输入密码</string>
 </resources>
