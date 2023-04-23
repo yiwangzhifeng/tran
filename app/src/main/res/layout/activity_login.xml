@@ -43,7 +43,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/pwdhint"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight_percent="0.3"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -55,12 +55,15 @@
         app:met_primaryColor="#044F9E"
         app:met_floatingLabelTextSize="20dp"
         />
-    <mehdi.sakout.fancybuttons.FancyButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_preview"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/loginbut"
         android:textSize="20sp"
+        android:enabled="false"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -68,7 +71,9 @@
         app:layout_constraintVertical_bias="0.45"
         app:layout_constraintWidth_percent="0.8"
         app:layout_constraintHeight_percent="0.06"
-        fancy:fb_radius="25dp"
-        fancy:fb_defaultColor="#609FEC"
+
+        fancy:fb_defaultColor="#0B68DA"
+        fancy:fb_disabledColor="#F75998E3"
         />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
