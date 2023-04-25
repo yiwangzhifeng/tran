@@ -77,7 +77,7 @@
         android:id="@+id/Separator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="|"
+        android:text="@string/Separator"
         android:textSize="18sp"
         android:layout_marginTop="70dp"
         app:layout_constraintTop_toTopOf="@id/btn_preview"
@@ -98,6 +98,7 @@
         android:clickable="true"
         />
     <TextView
+        android:id="@+id/forget_pwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forget_pwd"
