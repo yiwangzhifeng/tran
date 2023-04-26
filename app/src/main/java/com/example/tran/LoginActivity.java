@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.TextPaint;
 import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
@@ -45,16 +46,20 @@ public class LoginActivity extends AppCompatActivity {
         });
         textView_sign_in=findViewById(R.id.sign_in_text);
 
-        String text = "启动一个Activity";
+        String text = (String) textView_sign_in.getText();
 
         SpannableString spannableString = new SpannableString(text);
 
         spannableString.setSpan(new ClickableSpan() {
+            @Override
+            public void updateDrawState(TextPaint ds) {
 
+                ds.setUnderlineText(false);//不要下划线（默认有下划线）
+            }
             @Override
             public void onClick(View widget) {
                 //Intent 启动一个Activity
-                Intent intent = new Intent(this, SignInActivity.class);
+                Intent intent = new Intent(LoginActivity.this, SignInActivity.class);
                 //跳转
                 startActivity(intent);
             }
