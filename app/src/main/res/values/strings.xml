@@ -13,4 +13,8 @@
     <string name="hint_repwd">请重复密码</string>
     <string name="repwd">重复密码</string>
     <string name="login_button">注册</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
